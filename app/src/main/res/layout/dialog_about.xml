@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="210dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关于"
+        android:textSize="26sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvAboutCotent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible"
+        android:textSize="16sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="感谢以下开源框架：\n  xUtils-2.6.14  fastjson-1.2.5\n  shareSDK  picasso\n  MobTools  okhttp-3.2.0\n  如有任何建议请发邮件到\n  hehaobing@aliyun.com"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="捐赠"
+            android:layout_toStartOf="@+id/tvAboutSubmit"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="2dp"
+            android:id="@+id/tvAboutMoney"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="2dp"
+            android:id="@+id/tvAboutSubmit"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

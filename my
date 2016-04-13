@@ -1,0 +1,5 @@
+出现问题
+1、FashJosn无法过滤不需要序列化的属性，使效率降低
+2、在工作线程中获取数据，更新ListView时，普通的notifyDataSetChanged()方法不能更新数据，原因是在初始化Adapter的时候，绑定了
+的数据源，而在Adapter中只是重新执行getView的方法，所以指针依然是旧的数据源，所以需要先将数据源clean并addAll(新的数据源)，在
+执行notifyDataSetChanged()方法才能正常更新数据

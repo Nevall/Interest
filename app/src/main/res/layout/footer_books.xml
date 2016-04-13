@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/fl"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/pbload"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:indeterminate="true"
+        />
+    <TextView
+        android:layout_toEndOf="@+id/pbload"
+        android:id="@+id/tvmore"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="更多..."
+        android:textSize="16sp" />
+</LinearLayout>

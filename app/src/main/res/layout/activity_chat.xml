@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/chat_anim"
+        android:id="@+id/ivChat"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        />
+    <RelativeLayout
+    android:layout_below="@+id/ivChat"
+    android:layout_above="@+id/llButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="25dp">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvYouChat"
+        android:background="@drawable/chat_you"
+        android:textSize="18sp"
+        android:text="亲，说句话吧"
+        android:padding="10dp"
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMyChat"
+        android:background="@drawable/chat_me"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        />
+    >
+</RelativeLayout>
+
+    <!-- 底部内容输入框 -->
+    <LinearLayout
+        android:id="@+id/llButton"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilChat"
+            >
+            <EditText
+                android:id="@+id/etContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入内容"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            />
+    </LinearLayout>
+</RelativeLayout>
